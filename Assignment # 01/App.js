@@ -7,6 +7,7 @@ function App() {
       <View style={styles.container}>
         <View>
           <Text style={styles.heading}>LOGIN</Text>
+          <Text style={styles.dash}>_</Text>
         </View>
         <View>
           <TextInput
@@ -16,12 +17,13 @@ function App() {
           />
           <TextInput
             style={styles.inputField}
+            secureTextEntry
             textContentType="password"
             placeholder="Enter Password"
           />
         </View>
         <View style={styles.loginBtnMain}>
-          <Button style={styles.loginBtn} title="&nbsp; &nbsp; Login NOW &nbsp; &nbsp;" />
+          <Button style={styles.loginBtn} title="Login NOW" />
         </View>
 
         <View>
@@ -39,14 +41,21 @@ const styles = StyleSheet.create({
     height: "100%",
     marginLeft: "auto",
     marginRight: "auto",
-    justifyContent: "center",
-    alignItems: "center"
+    justifyContent:'center',
+    flex:1
   },
   heading: {
     fontSize: 25,
     fontWeight: "bold",
     color: "#0971f1",
-    marginVertical: 10
+
+  },
+  dash: {
+    fontSize: 35,
+    fontWeight: "bold",
+    color: "#0971f1",
+    marginBottom: 10,
+    marginTop:-20
   },
   inputField: {
     paddingVertical: 15,
@@ -55,7 +64,6 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     borderColor: "#d3d3d3",
     marginVertical: 10,
-    width: "100%"
   },
   loginBtn: {
     backgroundColor: "#0971f1",
