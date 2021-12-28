@@ -140,7 +140,6 @@ const stylesFile = {
 
 
     secondScreenTodosContainer: {
-        flex:1,
         paddingTop: 10,
         paddingBottom: 100,
     },
